@@ -1,0 +1,6 @@
+(defun get_nth (list_input size)
+	(if (= size 0) ( return-from get_nth (car list_input)))
+	(get_nth (cdr list_input) (-size 1))
+	)
+
+(write (get_nth '(A B C D E) 3))
